@@ -3,3 +3,9 @@
   src: url('/src/fonts/Roboto-Thin.woff2') format('woff2'),
     url('/src/fonts/Roboto-Thin.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/src/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('/src/fonts/PlayfairDisplay-Regular.woff') format('woff');
+}
