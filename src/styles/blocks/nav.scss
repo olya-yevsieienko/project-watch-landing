@@ -49,6 +49,7 @@
   }
 
   &__action {
+    position: relative;
     padding: 24px 0;
     display: flex;
     align-items: center;
@@ -59,5 +60,26 @@
     }
   }
 
+  &__like {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
 
+    background: #E6C8B4;
+
+    &::after {
+      content: '1';
+      position: relative;
+      bottom: 5px;
+      display: block;
+      font-weight: 800;
+      font-size: 8px;
+      text-align: center;
+      color: $secondary-color;
+    }
+  }
 }
