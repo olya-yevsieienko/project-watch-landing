@@ -7,7 +7,7 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="page__body">
-  <nav class="page__nav page__section nav">
+  <nav class="page__nav page__section nav" hidden>
     <div class="nav__content">
       <a href="#" class="nav__logo-link">
         <img src="./images/icon/logo.svg" alt="Логотип">
@@ -43,7 +43,7 @@
     </div>
   </nav>
 
-  <header class="page__section header">
+  <header class="page__section header" hidden>
     <div class="header__content">
       <div class="header__info">
         <h1 class="page__title header__title">
@@ -71,5 +71,86 @@
       </div>
     </div>
   </header>
+
+  <main class="page__main">
+    <section class="page__section section-top-models" hidden>
+      <div class="section-top-models__content">
+        <h2 class="page__subtitle section-top-models__title">
+          Популярные модели
+        </h2>
+
+        <div class="section-top-models__wrap">
+          <p class="section-top-models__watch-all">
+            Смотреть все
+          </p>
+        </div>
+
+        <div class="section-top-models__products">
+          <div class="section-top-models__product-card">
+            <h3 class="section-top-models__product-name">RADO</h3>
+            <p class="section-top-models__price">65 300 ₽</p>
+  
+            <div class="section-top-models__image-wrap">
+              <img src="./images/watch_1.png" alt="Часы" class="section-top-models__image">
+            </div>
+  
+            <p class="section-top-models__more">
+              Подробнее
+            </p>
+          </div>
+  
+          <div class="section-top-models__product-card">
+            <h3 class="section-top-models__product-name">BVLGARI</h3>
+            <p class="section-top-models__price">81 700  ₽</p>
+  
+            <div class="section-top-models__image-wrap">
+              <img src="./images/watch_3.png" alt="Часы" class="section-top-models__image">
+            </div>
+  
+            <p class="section-top-models__more">
+              Подробнее
+            </p>
+          </div>
+  
+          <div class="section-top-models__product-card">
+            <h3 class="section-top-models__product-name">BVLGARI</h3>
+            <p class="section-top-models__price">72 700 ₽</p>
+  
+            <div class="section-top-models__image-wrap">
+              <img src="./images/watch_4.png " alt="Часы" class="section-top-models__image">
+            </div>
+  
+            <p class="section-top-models__more">
+              Подробнее
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page__section section-quality" hidden>
+      <div class="section-quality__content">
+        <div class="section-quality__image-wrap">
+          <img src="./images/photo_banner.jpg" alt="Часы" class="section-quality__image">
+        </div>
+
+        <div class="section-quality__info">
+          <h2 class="page__subtitle section-quality__title">
+            Подлинное качество
+          </h2>
+
+          <p class="section-quality__text">
+            Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.
+          </p>
+
+          <div class="section-quality__button button">
+            <a href="#каталог" class="button__title">Смотреть каталог</a>
+          </div>
+
+          <div class="section-quality__ellipses"></div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
