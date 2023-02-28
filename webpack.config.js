@@ -26,7 +26,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Watch Rado',
+      title: 'CONQUEST',
       template: path.join(__dirname, 'src', 'template.html'),
       filename: 'index.html',
     }),
