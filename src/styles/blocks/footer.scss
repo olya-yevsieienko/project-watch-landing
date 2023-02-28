@@ -1,0 +1,88 @@
+.footer {
+  color: rgba(255, 255, 255, 0.75);
+
+  &__content {
+    padding: 40px 20px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include onTablet {
+      margin: 0 auto;
+      padding: 40px 20px 36px;
+      max-width: 744px;
+      display: grid;
+      align-items: start;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      column-gap: 20px;
+    }
+
+    @include onDesktop {
+      padding: 80px 185px 68px;
+      max-width: 1440px;
+    }
+  }
+
+  &__block {
+    position: relative;
+    margin-bottom: 32px;
+    width: 160px;
+
+    @include onTablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image-wrap {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 13px;
+      display: block;
+      height: 22px;
+      width: 2.5px;
+      background: #FFFFFF;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    height: 35px;
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    @include onTablet {
+      height: 35px;
+      line-height: 16px;
+    }
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+    transition: .5s ease;
+
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+
+    &:hover {
+      font-size: 14px;
+    }
+  }
+}

@@ -7,7 +7,7 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="page__body">
-  <nav class="page__nav page__section nav" hidden>
+  <nav class="page__nav page__section nav">
     <div class="nav__content">
       <a href="#" class="nav__logo-link">
         <img src="./images/icon/logo.svg" alt="Логотип">
@@ -39,11 +39,36 @@
         <a href="#корзина" class="nav__action">
           <img src="./images/icon/basket.svg" alt="Корзина" class="nav__icon">
         </a>
+        <a href="#mobile-menu" class="nav__action">
+          <img src="./images/icon/menu.svg" alt="Корзина" class="nav__icon nav__icon--menu">
+        </a>
+      </div>
+
+      <div id="mobile-menu" class="page__menu nav__mobile-menu menu">
+        <ul class="menu__list">
+          <li class="menu-item">
+            <a href="#каталог" class="menu__link">Каталог</a>
+          </li>
+          <li class="menu-item">
+            <a href="#акции" class="menu__link">Акции</a>
+          </li>
+          <li class="menu-item">
+            <a href="#доставка" class="menu__link">Доставка</a>
+          </li>
+          <li class="menu-item">
+            <a href="#контакты" class="menu__link">Контакты</a>
+          </li>
+
+          <li class="menu-item">
+            <img src="./images/icon/arrow_left.svg" alt="" srcset="">
+            <a href="#" class="menu__link">&nbsp;Назад</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
-  <header class="page__section header" hidden>
+  <header class="page__section header">
     <div class="header__content">
       <div class="header__info">
         <h1 class="page__title header__title">
@@ -73,7 +98,7 @@
   </header>
 
   <main class="page__main">
-    <section class="page__section section-top-models" hidden>
+    <section id="каталог" class="page__section section-top-models">
       <div class="section-top-models__content">
         <h2 class="page__subtitle section-top-models__title">
           Популярные модели
@@ -128,11 +153,16 @@
       </div>
     </section>
 
-    <section class="page__section section-quality" hidden>
+    <section class="page__section page--hidden section-quality">
       <div class="section-quality__content">
         <div class="section-quality__image-wrap">
           <img src="./images/photo_banner.jpg" alt="Часы" class="section-quality__image">
-        </div>
+          <div class="section-quality__slider slider">
+            <div class="slider__left"></div>
+            <p class="slider__slide-num">01</p>
+            <div class="slider__right"></div>
+          </div>
+        </div> 
 
         <div class="section-quality__info">
           <h2 class="page__subtitle section-quality__title">
@@ -151,6 +181,83 @@
         </div>
       </div>
     </section>
+
+    <section class="page__section section-news">
+      <div class="section-news__content">
+        <div class="">
+          <h2 class="page__subtitle section-news__title">
+            Следите за нашими новостями
+          </h2>
+  
+          <p class="section-news__text">
+            Подписывайтесь на
+            <strong class="section-news__text--strong">@conquest_watch</strong>
+            в соцсетях и узнавайте о новинках и акциях первыми.
+          </p>
+
+          <div class="section-news__social">
+            <a href="" class="section-news__link">
+              <img src="./images/icon/instagram_icon.svg" alt="Instagram" class="section-news__icon">
+            </a>
+            <a href="" class="section-news__link">
+              <img src="./images/icon/facebook_icon.svg" alt="Facebook" class="section-news__icon">
+            </a>
+            <a href="" class="section-news__link">
+              <img src="./images/icon/twitter_icon.svg" alt="Twitter" class="section-news__icon">
+            </a>
+          </div>
+        </div>
+
+        <div class="section-news__galery">
+          <img src="./images/photo_1.jpg" alt="" class="section-news__image1">
+          <img src="./images/photo_2.jpg" alt="" class="section-news__image2">
+          <img src="./images/photo_3.jpg" alt="" class="section-news__image3">
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer id="контакты" class="page__footer footer">
+    <div class="footer__content">
+      <div class="footer__block">
+        <div class="footer__image-wrap">
+          <img src="./images/icon/logo2.svg" alt="CONQUEST" class="footer__logo">
+        </div>
+        <p class="footer__info">8 (499) 450-47-97</p>
+        <p class="footer__info">info@conquest.watch.ru</p>
+      </div>
+ 
+      <div class="footer__block">
+        <h4 class="footer__subtitle">
+          о компании
+        </h4>
+        <p class="footer__info">Наши магазины</p>
+        <p class="footer__info">Вакансии</p>
+        <p class="footer__info">Сертификаты</p>
+        <p class="footer__info">Отзывы </p>
+      </div>
+
+      <div class="footer__block">
+        <h4 class="footer__subtitle">
+          покупателям 
+        </h4>
+        <p class="footer__info">Каталог товаров</p>
+        <p class="footer__info">Как заказать?</p>
+        <p class="footer__info">FAQ</p>
+        <p class="footer__info">Корпоративным клиентам </p>
+      </div>
+
+      <div class="footer__block">
+        <h4 class="footer__subtitle">
+          оплата и доставка
+        </h4>
+        <p class="footer__info">Способы оплаты</p>
+        <p class="footer__info">Время доставки</p>
+        <p class="footer__info">Гарантии и ремонт </p>
+        <p class="footer__info">Возврат и компенсация</p>
+      </div>
+
+    </div>
+  </footer>
 </body>
 </html>

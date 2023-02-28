@@ -4,11 +4,18 @@
   font-weight: 300;
   line-height: 150%;
   scroll-behavior: smooth;
-  overflow: hidden;
+  
+  &--hidden {
+    overflow: hidden;
+  }
   
   &__body {
     color: $main-color;
     background-color: $main-bgr-section;
+
+    &--with-menu {
+      overflow: hidden;
+    }
   }
 
   &__section {
@@ -27,11 +34,29 @@
     }
   }
 
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+
+    &:target {
+      transform: translateX(40%);
+    }
+  }
+
   &__title {
     @extend %title-h1;
   }
 
   &__subtitle {
     @extend %title-h2;
+  }
+
+  &__footer {
+    background-color: $main-color;
   }
 }

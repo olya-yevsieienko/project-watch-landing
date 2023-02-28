@@ -20,6 +20,13 @@
     }
   }
 
+  &__mobile-menu {
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
   &__menu-item {
     &:not(:last-child) {
       margin-right: 20px;
@@ -42,6 +49,8 @@
     font-size: 14px;
     line-height: 16px;
     color: $nav-link-color;
+
+    @extend %hover-nav;
   }
 
   &__top-actions {
@@ -58,6 +67,8 @@
     &:not(:last-child) {
       margin-right: 24px;
     }
+
+    @extend %hover-image;
   }
 
   &__like {
@@ -80,6 +91,23 @@
       font-size: 8px;
       text-align: center;
       color: $secondary-color;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 20px;
+
+    &--menu {
+      @include onTablet {
+        display: none;
+      }
+    }
+  }
+
+  &__mobile-menu {
+    @include onTablet {
+      display: none;
     }
   }
 }

@@ -1,0 +1,26 @@
+.slider {
+  display: flex;
+  align-items: center;
+
+  &__left {
+    display: block;
+    width: 5px;
+    height: 10px;
+    background-image: url('../../images/icon/arrow_left.svg');
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  &__slide-num {
+    margin: 0 20px;
+  }
+
+  &__right {
+    display: block;
+    width: 5px;
+    height: 10px;
+    background-image: url('../../images/icon/arrow_right.svg');
+    background-size: cover;
+    cursor: pointer;
+  }
+}

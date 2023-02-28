@@ -3,6 +3,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     overflow: hidden;
     
     @include onTablet {
@@ -83,7 +84,7 @@
   }
 
   &__image-wrap {
-    position: relative;
+    position: absolute;
     right: -28px;
     max-width: 400px;
     width: 100%;
@@ -190,7 +191,7 @@
     }
 
     @include onTablet {
-      bottom: 50px;
+      bottom: 80px;
       left: -90px;
       font-size: 16px;
 

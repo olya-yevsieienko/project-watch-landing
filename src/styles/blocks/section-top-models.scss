@@ -6,7 +6,11 @@
     height: max-content;
 
     @include onTablet {
+      margin-bottom: 80px;
       padding-top: 80px;
+    }
+    
+    @include onDesktop {
       height: 100vh;
     }
   }
@@ -40,6 +44,7 @@
     font-size: 16px;
     text-align: right;
     border-bottom: 1px solid $watch-all-line-color;
+    cursor: pointer;
   }
 
   &__products {
@@ -107,6 +112,9 @@
   &__more {
     margin-left: 52px;
 
+    cursor: pointer;
+    transition: .5s ease;
+
     &::before {
       content: '';
       position: relative;
@@ -116,6 +124,10 @@
       width: 30px;
       height: 1px;
       background: $line-color;
+    }
+
+    &:hover {
+      font-size: 18px;
     }
   }
 }

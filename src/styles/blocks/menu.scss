@@ -1,0 +1,34 @@
+.menu {
+  margin: 0 auto;
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: $button-text-color;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 1;
+
+  &__list {
+    padding: 44px 0 40px;
+  }
+
+  &__link {
+    margin-top: 40px;
+    padding: 12px 0;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: $secondary-color;
+    letter-spacing: 2px;
+    border-bottom: 1px solid transparent;
+    text-transform: uppercase;
+
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-color: $secondary-color;
+    }
+  }
+}
